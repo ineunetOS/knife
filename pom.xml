@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ineunet</groupId>
+	<artifactId>knife</artifactId>
+	<name>knife</name>
+	<packaging>pom</packaging>
+	<version>2.2.7-SNAPSHOT</version>
+	<modules>
+		<module>knife-parent</module>
+		<module>knife-mgt</module>
+		<module>knife-core</module>
+		<module>knife-security</module>
+		<module>knife-dao</module>
+		<module>knife-validation</module>
+		<module>knife-upload</module>
+	</modules>
+</project>

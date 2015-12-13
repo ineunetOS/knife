@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ineunet</groupId>
+		<artifactId>knife-parent</artifactId>
+		<version>2.2.8-SNAPSHOT</version>
+	</parent>
+	<artifactId>knife-dao</artifactId>
+	<name>knife-dao</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.ineunet</groupId>
+			<artifactId>knife-commons-utils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.ineunet</groupId>
+			<artifactId>knife-commons-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.ineunet</groupId>
+			<artifactId>knife-commons-qlmap</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ineunet</groupId>
+			<artifactId>knife-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.ineunet</groupId>
+			<artifactId>knife-mgt</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-commons-annotations</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- mongodb -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.9.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jongo</groupId>
+			<artifactId>jongo</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<attach>true</attach>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

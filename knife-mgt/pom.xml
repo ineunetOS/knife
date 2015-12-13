@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ineunet</groupId>
+		<artifactId>knife-parent</artifactId>
+		<version>2.2.8-SNAPSHOT</version>
+	</parent>
+	<artifactId>knife-mgt</artifactId>
+	<name>knife-mgt</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<!-- knife -->
+		<dependency>
+			<groupId>com.ineunet</groupId>
+			<artifactId>knife-commons-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.ineunet</groupId>
+			<artifactId>knife-core</artifactId>
+		</dependency>
+
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+</project>
